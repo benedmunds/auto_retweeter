@@ -4,8 +4,8 @@ var twitter = require('twitter');
 var twit = new twitter({
     consumer_key: 'R0T6zXWYLS6KzpfRrsKuA',
     consumer_secret: 'piqYeeGce8rbVo69TcPt9EZG1hozYluQlnIc02yPMpo',
-    access_token_key: '1240142701-PsIaMaFL7AWFAyeAo6KZg1tGVFe2homk26Nl5AN',
-    access_token_secret: 'NU7NwUIzxhVuUJjlwmE2TRrhXjWUt1FqMuMM5BGMAY'
+    access_token_key: '1240142701-H5XHYFSdn8lDuIBHfRpJ3oAntr8lHw1vCmqvjlF',
+    access_token_secret: '2t9mATppV3OY7JtOC5x6iyuKOqZ1F817boCbNC6udM'
 });
 
 function write(data) {
@@ -23,8 +23,9 @@ function write(data) {
 
         console.log('Tweeting: ' + text);
 
-        twit.updateStatus(text, function(){
+        twit.updateStatus(text, function(response){
             console.log('tweet callback');
+	    console.log(response);
         });
     }
     else if (data.delete) {
