@@ -12,7 +12,11 @@ Set your config settings at the top of retweet.js.
 
 
 
+
 Thanks,
+
 -Ben Edmunds
+
  ben.edmunds@gmail.com
+
  @benedmunds
